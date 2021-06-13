@@ -1,0 +1,27 @@
+<h6>*Note:Please Add more Than One User</h6>
+<div class="container">
+    <h4>Add User</h4>
+    <form (ngSubmit)="addUser()">
+        <div class="mb-3">
+            <label for="firstName" class="form-label">FirstName</label>
+            <input type="text"[(ngModel)]="user_info.firstname" class="form-control" name="firstname" id="firstname" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="lastname" class="form-label">LastName</label>
+            <input type="txt" [(ngModel)]="user_info.lastname" class="form-control" id="lastname" name="lastname" aria-describedby="emailHelp">
+          </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" [(ngModel)]="user_info.email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone</label>
+          <input type="text" [(ngModel)]="user_info.phone" class="form-control" name="phone" id="phone">
+        </div>
+        <button type="submit" class="btn btn-primary">Add User</button>
+        {{msg}}
+      </form>               
+</div>
+
+
